@@ -2,7 +2,7 @@
   "name": "food-festival",
   "version": "1.0.0",
   "description": "",
-  "main": "assets/js/script.js",
+  "main": "index.js",
   "scripts": {
     "webpack": "webpack --watch",
     "build": "webpack"
