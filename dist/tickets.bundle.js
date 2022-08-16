@@ -19,13 +19,13 @@ eval("function createEl(htmlString, attrs, ...children) {\r\n  if (typeof htmlSt
 
 /***/ }),
 
-/***/ "./assets/js/ticket.js":
-/*!*****************************!*\
-  !*** ./assets/js/ticket.js ***!
-  \*****************************/
+/***/ "./assets/js/tickets.js":
+/*!******************************!*\
+  !*** ./assets/js/tickets.js ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\r\nconst createEl = __webpack_require__(/*! ./domMethods */ \"./assets/js/domMethods.js\");\r\n\r\nif (window.location.href.indexOf(\"tickets\") > -1) {\r\n  const purchaseBtn = document.getElementById(\"purchaseBtn\");\r\n  const purchaseEmail = document.getElementById(\"purchaseEmail\");\r\n  const modalEl = document.querySelector(\".modal-content\");\r\n  const modalBodyEl = document.querySelector(\".modal-body\");\r\n  const modalFooterEl = document.querySelector(\".modal-footer\");\r\n\r\n  function purchaseTicket() {\r\n    modalEl.removeChild(modalBodyEl);\r\n    modalEl.removeChild(modalFooterEl);\r\n\r\n    modalEl.append(\r\n      createEl(\r\n        \"div\",\r\n        { class: \"modal-body\" },\r\n        createEl(\r\n          \"h5\",\r\n          { class: \"modal-title\" },\r\n          `Thanks for requesting a ticket purchase! We will send an email to ${purchaseEmail.value} to complete the order form!`\r\n        )\r\n      )\r\n    );\r\n  }\r\n  purchaseBtn.addEventListener(\"click\", purchaseTicket);\r\n}\r\n\n\n//# sourceURL=webpack://food-festival/./assets/js/ticket.js?");
+eval("__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\r\nconst createEl = __webpack_require__(/*! ./domMethods */ \"./assets/js/domMethods.js\");\r\n\r\nif (window.location.href.indexOf(\"tickets\") > -1) {\r\n  const purchaseBtn = document.getElementById(\"purchaseBtn\");\r\n  const purchaseEmail = document.getElementById(\"purchaseEmail\");\r\n  const modalEl = document.querySelector(\".modal-content\");\r\n  const modalBodyEl = document.querySelector(\".modal-body\");\r\n  const modalFooterEl = document.querySelector(\".modal-footer\");\r\n\r\n  function purchaseTicket() {\r\n    modalEl.removeChild(modalBodyEl);\r\n    modalEl.removeChild(modalFooterEl);\r\n\r\n    modalEl.append(\r\n      createEl(\r\n        \"div\",\r\n        { class: \"modal-body\" },\r\n        createEl(\r\n          \"h5\",\r\n          { class: \"modal-title\" },\r\n          `Thanks for requesting a ticket purchase! We will send an email to ${purchaseEmail.value} to complete the order form!`\r\n        )\r\n      )\r\n    );\r\n  }\r\n  purchaseBtn.addEventListener(\"click\", purchaseTicket);\r\n}\r\n\n\n//# sourceURL=webpack://food-festival/./assets/js/tickets.js?");
 
 /***/ }),
 
@@ -132,7 +132,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./assets/js/ticket.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./assets/js/tickets.js");
 /******/ 	
 /******/ })()
 ;

@@ -6,12 +6,12 @@ const path = require("path");
 const config = {
   entry: {
     app: "./assets/js/script.js",
-    events: "./assets/js/event.js",
+    events: "./assets/js/events.js",
     schedule: "./assets/js/schedule.js",
-    tickets: "./assets/js/ticket.js",
+    tickets: "./assets/js/tickets.js",
   },
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: __dirname + "/dist",
     filename: "[name].bundle.js",
   },
   module: {
